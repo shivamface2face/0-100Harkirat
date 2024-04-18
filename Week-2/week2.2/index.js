@@ -10,7 +10,16 @@ app.get('/',(req,res)=>{
 
 })
 
+app.post("/asd",(req,res)=>{
+     console.log(req.headers["Connection"]);
+     res.send("hey post request");
+     console.log(req.body);
 
-app.listen(port,()=>{
-    res.send("app is workinh in 3000 port")
+
+
+})
+
+
+app.listen(port,(req,res)=>{
+ console.log("app is working in 3000 port");
 });
