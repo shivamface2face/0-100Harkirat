@@ -24,11 +24,34 @@ app.get("/helth",(req,res)=>{
     };
  
      
-
-
-
     res.send("you are helthy");
 })
+
+app.put("/replace",(req,res)=>{
+    const kidneyId=req.query.kidneyId;
+    const username=req.headers.username;
+    const password=req.headers.password;
+
+    if(username!="cvm" && password!="pass"){
+        res.status(403).json({
+            msg:"invalid user"
+        });
+        return;
+    };
+
+    if(kidneyId!=1 && kidneyId!=2){
+        res.status(411).json({
+            msg:"invalid user"
+        });
+        return;
+    };
+
+    res.send("you are fine ")
+})
+
+
+
+
 
 
 app.listen(3000);
