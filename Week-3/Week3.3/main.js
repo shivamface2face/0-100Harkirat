@@ -43,10 +43,10 @@ function verifyJwt(token) {
   }
 
 
-let ans = signJwt("shivamsingh@email.com", "asdasdasdas");
+let ans = signJwt("cvmsdsh@email.com", "asdasdasdas");
 
 console.log(ans);
-let ans2=decodeJwt("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhbXNpbmdoQGVtYWlsLmNvbSIsImlhdCI6MTcxNDI4NjY0MH0.sColYHgw7jnCNNKmlgnXZyjDAfih2gWiV-nncLA0bWQ");
+let ans2=decodeJwt("eyJhbGciOiJILmNvbSIsImlhdCI6MTcxNDI4NjY0MH0.sColYHgw7jnCNNKmlgnXZyjDAfih2gWiV-nncLA0bWQ");
 console.log(ans2);
-let ans3=verifyJwt("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhbXNpbmdoQGVtYWlsLmNvbSIsImlhdCI6MTcxNDI4NjY0MH0.sColYHgw7jnCNNKmlgnXZyjDAfih2gWiV-nncLA0bWQ");
+let ans3=verifyJwt("eyJhbGciOiJIUbSIsImlhdCI6MTcxNDI4NjY0MH0.sColYHgw7jnCNNKmlgnXZyjDAfih2gWiV-nncLA0bWQ");
 console.log(ans3);
